@@ -126,5 +126,13 @@ namespace OOCsharp
             //    idfs?.Dispose();
             //}
         }
+        [TestMethod]
+        public void Test_014_FileStream()
+        {
+            using (var fs = new StreamReader(filename))
+            {
+                var line1 = fs.ReadLine();
+            }
+        }
     }
 }
